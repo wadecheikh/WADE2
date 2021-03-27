@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PEDIATRIE DE PIKINE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="/patients">Home</a></li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/patients">Chercher</a></li>
+          <li><a routerLink="/nouveau-patient">Ajouter</a></li>
+        </ul>
+      </li>
+
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Medecins
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/patients">Chercher</a></li>
+          <li><a routerLink="/nouveau-patient">Ajouter</a></li>
+        </ul>
+      </li>
+
+
+
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dossiers
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/patients">Chercher</a></li>
+          <li><a routerLink="/nouveau-patient">Ajouter</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<router-outlet>
+
+  </router-outlet>

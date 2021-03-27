@@ -1,0 +1,38 @@
+
+
+  <div class="container">
+
+        <div class="panel panel-primary">
+        <div class="panel panel-primary">
+              <div class="panel-heading">Liste des Patients</div>
+      <div class="panel-body">
+        <button class="btn btn-primary"(click)="oneGetPatients()">Patients</button>
+        <div class="panel-body">
+
+
+          <table *ngIf="patients" CLASS="table table-striped">
+
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Prenom</th>
+              <th>Telephone</th>
+              <th>Addresse</th>
+              <th>Age</th>
+            </tr>
+
+            <tr *ngFor="let p of patients._embedded.patients">
+
+              <td>{{p.idP}}</td>
+              <td>{{p.nom}}</td>
+              <td>{{p.prenom}}</td>
+              <td>{{p.tel}}</td>
+              <td>{{p.address}}</td>
+              <td>{{p.age}}</td>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
